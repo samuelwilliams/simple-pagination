@@ -8,7 +8,7 @@ class Pagination
      * @param int $pagesToShow The number of pages to show
      * @return array
      */
-    public function paginate($totalPages, $currentPage, $pagesToShow = 10)
+    public static function paginate($totalPages, $currentPage, $pagesToShow = 10)
     {
         if ($totalPages < $pagesToShow) {
             return range(1, $totalPages);
