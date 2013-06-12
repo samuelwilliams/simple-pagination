@@ -1,0 +1,17 @@
+{
+    "name": "swilliams/pagination",
+    "authors": [
+        {
+            "name": "Sam Williams",
+            "email": "samuel.williams8@gmail.com"
+        }
+    ],
+    "require": {
+
+    },
+    "autoload": {
+        "psr-0": {
+            "": "src/"
+        }
+    }
+}
