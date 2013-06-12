@@ -10,6 +10,10 @@ class Pagination
      */
     public function paginate($totalPages, $currentPage, $pagesToShow = 10)
     {
+        if ($totalPages < $pagesToShow) {
+            return range(1, $totalPages);
+        }
+
         if ($pagesToShow % 2 === 0) {
             $pagesLeft = ($pagesToShow / 2) - 1;
             $pagesRight = ($pagesToShow / 2);
