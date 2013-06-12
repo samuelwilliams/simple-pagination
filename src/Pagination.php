@@ -33,12 +33,9 @@ class Pagination
             $pagesRight -= $diff;
         }
 
-        $pages = array();
-
-        for ($i = ($currentPage - $pagesLeft); $i <= ($currentPage + $pagesRight); $i++) {
-            $pages[] = $i;
-        }
-
-        return $pages;
+        return range(
+            $currentPage - $pagesLeft,
+            $currentPage + $pagesRight
+        );
     }
 }
